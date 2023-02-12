@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShop.Infrastructure.In
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShop.Infrastructure", "MovieShop.Infrastructure\MovieShop.Infrastructure.csproj", "{6962DE74-205B-4C1A-A146-8BD29D43629D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieShop.Application.Interfaces", "MovieShop.Application.Interfaces\MovieShop.Application.Interfaces.csproj", "{77F59F1A-26CE-49C0-B0FF-7F9C87909BA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShop.Application.Interfaces", "MovieShop.Application.Interfaces\MovieShop.Application.Interfaces.csproj", "{77F59F1A-26CE-49C0-B0FF-7F9C87909BA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieShop.Application", "MovieShop.Application\MovieShop.Application.csproj", "{9E51FC22-0939-43B9-812F-030E57442B3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShop.Application", "MovieShop.Application\MovieShop.Application.csproj", "{9E51FC22-0939-43B9-812F-030E57442B3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieShop.Api", "MovieShop.Api\MovieShop.Api.csproj", "{0850A039-EB2C-49B4-B05D-489812782AB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{9E51FC22-0939-43B9-812F-030E57442B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E51FC22-0939-43B9-812F-030E57442B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E51FC22-0939-43B9-812F-030E57442B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0850A039-EB2C-49B4-B05D-489812782AB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0850A039-EB2C-49B4-B05D-489812782AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0850A039-EB2C-49B4-B05D-489812782AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0850A039-EB2C-49B4-B05D-489812782AB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

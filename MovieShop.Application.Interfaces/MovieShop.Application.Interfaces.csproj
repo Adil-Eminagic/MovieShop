@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MovieShop.Infrastructure\MovieShop.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
