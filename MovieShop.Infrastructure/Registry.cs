@@ -13,6 +13,8 @@ namespace MovieShop.Infrastructure
             services.AddScoped<IPhotosRepository, PhotosRepository>();
             services.AddScoped<IUsersRepository, UsersRepository>();
 
+            services.AddScoped<IUnitOfWork,UnitOfWork>();
+
         }
     }
 }

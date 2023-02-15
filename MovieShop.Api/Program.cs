@@ -1,11 +1,25 @@
+using MovieShop.Api;
+using MovieShop.Api.Config;
+using MovieShop.Application;
+using MovieShop.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+var connectionString = builder.BindConfig<ConnectionStringConfig>("ConnectionStrings");
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddValidators();
+builder.Services.AddInfrastructure();
+builder.Services.AddApplication();
+builder.Services.AddDataBase(connectionString);
+builder.Services.AddMapper();
+
+if (builder.Environment.IsDevelopment())
+{
+    builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddSwaggerGen();
+}
+
 
 var app = builder.Build();
 

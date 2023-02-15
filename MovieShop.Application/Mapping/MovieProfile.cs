@@ -7,7 +7,7 @@ namespace MovieShop.Application
         public MovieProfile()
         {
             CreateMap<Movie, MovieDto>().ReverseMap();
-            CreateMap<Movie, MovieUpsertDto>();
+            CreateMap<MovieUpsertDto, Movie>();
         }
     }
 }

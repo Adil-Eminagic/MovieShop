@@ -19,7 +19,7 @@ namespace MovieShop.Application
         public static void AddValidators(this IServiceCollection services)
         {
             services.AddScoped<IValidator<PhotoUpsertDto>, PhotoValidator>();
-            services.AddScoped<IValidator<MovieBuyUpsertDto>, MovieBuyValidator>();
+            services.AddScoped<IValidator<MovieUpsertDto>, MovieValidator>();
             services.AddScoped<IValidator<MovieBuyUpsertDto>, MovieBuyValidator>();
             services.AddScoped<IValidator<UserUpsertDto>, UserValidator>();
             // TODO: Add other validators

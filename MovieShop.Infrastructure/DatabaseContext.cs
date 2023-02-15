@@ -8,10 +8,10 @@ namespace MovieShop.Infrastructure
     {
         public DatabaseContext(DbContextOptions<DatabaseContext> options):base(options) { }
 
-        public DbSet<User> Users { get; set; }
-        public DbSet<Movie> Movies { get; set; }
-        public DbSet<MovieBuy> MovieBuys { get; set; }
-        public DbSet<Photo> Photos { get; set; }
+        public DbSet<User> Users { get; set; } = null!;
+        public DbSet<Movie> Movies { get; set; } = null!;
+        public DbSet<MovieBuy> MovieBuys { get; set; } = null!;
+        public DbSet<Photo> Photos { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
